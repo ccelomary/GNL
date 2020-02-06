@@ -6,7 +6,7 @@
 /*   By: mel-omar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 17:44:25 by mel-omar          #+#    #+#             */
-/*   Updated: 2020/02/06 16:33:10 by mel-omar         ###   ########.fr       */
+/*   Updated: 2020/02/06 17:25:42 by mel-omar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char		*ft_realloc(char **buffer, size_t old_size, size_t new_size)
 	size_t	iter;
 
 	iter = 0;
-	new_buff = malloc(sizeof(char *) * (old_size + new_size));
+	new_buff = malloc(sizeof(char) * (old_size + new_size));
 	while (iter < old_size)
 	{
 		new_buff[iter] = (*buffer)[iter];
